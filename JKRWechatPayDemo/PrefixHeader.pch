@@ -1,0 +1,16 @@
+//
+//  PrefixHeader.pch
+//  JKRWechatPayDemo
+//
+//  Created by tronsis_ios on 16/8/29.
+//  Copyright © 2016年 tronsis_ios. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <UIKit/UIKit.h>
+#import "WXApi.h"
+#import "AFNetworking.h"
+
+#endif /* PrefixHeader_pch */

@@ -1,0 +1,721 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		43A454D11D73DECA00CF21FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A454D01D73DECA00CF21FD /* main.m */; };
+		43A454D41D73DECA00CF21FD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A454D31D73DECA00CF21FD /* AppDelegate.m */; };
+		43A454D71D73DECA00CF21FD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A454D61D73DECA00CF21FD /* ViewController.m */; };
+		43A454DA1D73DECA00CF21FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43A454D81D73DECA00CF21FD /* Main.storyboard */; };
+		43A454DC1D73DECA00CF21FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43A454DB1D73DECA00CF21FD /* Assets.xcassets */; };
+		43A454DF1D73DECA00CF21FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43A454DD1D73DECA00CF21FD /* LaunchScreen.storyboard */; };
+		43A454EA1D73DECB00CF21FD /* JKRWechatPayDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A454E91D73DECB00CF21FD /* JKRWechatPayDemoTests.m */; };
+		43A454F51D73DECB00CF21FD /* JKRWechatPayDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A454F41D73DECB00CF21FD /* JKRWechatPayDemoUITests.m */; };
+		43A455091D73E11600CF21FD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A455081D73E11600CF21FD /* SystemConfiguration.framework */; };
+		43A4550B1D73E11D00CF21FD /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A4550A1D73E11D00CF21FD /* libz.tbd */; };
+		43A4550D1D73E13600CF21FD /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A4550C1D73E13600CF21FD /* libsqlite3.tbd */; };
+		43A4550F1D73E14300CF21FD /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A4550E1D73E14300CF21FD /* libc++.tbd */; };
+		43A455361D73E5A800CF21FD /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A455131D73E5A800CF21FD /* AFHTTPSessionManager.m */; };
+		43A455371D73E5A800CF21FD /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A455161D73E5A800CF21FD /* AFNetworkReachabilityManager.m */; };
+		43A455381D73E5A800CF21FD /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A455181D73E5A800CF21FD /* AFSecurityPolicy.m */; };
+		43A455391D73E5A800CF21FD /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A4551A1D73E5A800CF21FD /* AFURLRequestSerialization.m */; };
+		43A4553A1D73E5A800CF21FD /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A4551C1D73E5A800CF21FD /* AFURLResponseSerialization.m */; };
+		43A4553B1D73E5A800CF21FD /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A4551E1D73E5A800CF21FD /* AFURLSessionManager.m */; };
+		43A4553C1D73E5A800CF21FD /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 43A4551F1D73E5A800CF21FD /* LICENSE */; };
+		43A4553D1D73E5A800CF21FD /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 43A455201D73E5A800CF21FD /* README.md */; };
+		43A4553E1D73E5A800CF21FD /* AFAutoPurgingImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A455231D73E5A800CF21FD /* AFAutoPurgingImageCache.m */; };
+		43A4553F1D73E5A800CF21FD /* AFImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A455251D73E5A800CF21FD /* AFImageDownloader.m */; };
+		43A455401D73E5A800CF21FD /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A455271D73E5A800CF21FD /* AFNetworkActivityIndicatorManager.m */; };
+		43A455411D73E5A800CF21FD /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A455291D73E5A800CF21FD /* UIActivityIndicatorView+AFNetworking.m */; };
+		43A455421D73E5A800CF21FD /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A4552B1D73E5A800CF21FD /* UIButton+AFNetworking.m */; };
+		43A455431D73E5A800CF21FD /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A4552E1D73E5A800CF21FD /* UIImageView+AFNetworking.m */; };
+		43A455441D73E5A800CF21FD /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A455311D73E5A800CF21FD /* UIProgressView+AFNetworking.m */; };
+		43A455451D73E5A800CF21FD /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A455331D73E5A800CF21FD /* UIRefreshControl+AFNetworking.m */; };
+		43A455461D73E5A800CF21FD /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A455351D73E5A800CF21FD /* UIWebView+AFNetworking.m */; };
+		43A4554B1D73E61100CF21FD /* DataMD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A455481D73E61100CF21FD /* DataMD5.m */; };
+		43A4554C1D73E61100CF21FD /* XMLDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A4554A1D73E61100CF21FD /* XMLDictionary.m */; };
+		43A455581D74068D00CF21FD /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A455521D74068D00CF21FD /* libWeChatSDK.a */; };
+		43A455591D74068D00CF21FD /* read_me.txt in Resources */ = {isa = PBXBuildFile; fileRef = 43A455531D74068D00CF21FD /* read_me.txt */; };
+		43A4555A1D74068D00CF21FD /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 43A455541D74068D00CF21FD /* README.txt */; };
+		43A4555B1D74071F00CF21FD /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A4554D1D73F0D600CF21FD /* CoreTelephony.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		43A454E61D73DECB00CF21FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43A454C41D73DEC800CF21FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43A454CB1D73DEC900CF21FD;
+			remoteInfo = JKRWechatPayDemo;
+		};
+		43A454F11D73DECB00CF21FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43A454C41D73DEC800CF21FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43A454CB1D73DEC900CF21FD;
+			remoteInfo = JKRWechatPayDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		43A454CC1D73DEC900CF21FD /* JKRWechatPayDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JKRWechatPayDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		43A454D01D73DECA00CF21FD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		43A454D21D73DECA00CF21FD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		43A454D31D73DECA00CF21FD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		43A454D51D73DECA00CF21FD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		43A454D61D73DECA00CF21FD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		43A454D91D73DECA00CF21FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		43A454DB1D73DECA00CF21FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		43A454DE1D73DECA00CF21FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		43A454E01D73DECA00CF21FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43A454E51D73DECB00CF21FD /* JKRWechatPayDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JKRWechatPayDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		43A454E91D73DECB00CF21FD /* JKRWechatPayDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKRWechatPayDemoTests.m; sourceTree = "<group>"; };
+		43A454EB1D73DECB00CF21FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43A454F01D73DECB00CF21FD /* JKRWechatPayDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JKRWechatPayDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		43A454F41D73DECB00CF21FD /* JKRWechatPayDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKRWechatPayDemoUITests.m; sourceTree = "<group>"; };
+		43A454F61D73DECB00CF21FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43A455071D73E06200CF21FD /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		43A455081D73E11600CF21FD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		43A4550A1D73E11D00CF21FD /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		43A4550C1D73E13600CF21FD /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		43A4550E1D73E14300CF21FD /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		43A455121D73E5A800CF21FD /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		43A455131D73E5A800CF21FD /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		43A455141D73E5A800CF21FD /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		43A455151D73E5A800CF21FD /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		43A455161D73E5A800CF21FD /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		43A455171D73E5A800CF21FD /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		43A455181D73E5A800CF21FD /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		43A455191D73E5A800CF21FD /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		43A4551A1D73E5A800CF21FD /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		43A4551B1D73E5A800CF21FD /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		43A4551C1D73E5A800CF21FD /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		43A4551D1D73E5A800CF21FD /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		43A4551E1D73E5A800CF21FD /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		43A4551F1D73E5A800CF21FD /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		43A455201D73E5A800CF21FD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		43A455221D73E5A800CF21FD /* AFAutoPurgingImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAutoPurgingImageCache.h; sourceTree = "<group>"; };
+		43A455231D73E5A800CF21FD /* AFAutoPurgingImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFAutoPurgingImageCache.m; sourceTree = "<group>"; };
+		43A455241D73E5A800CF21FD /* AFImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFImageDownloader.h; sourceTree = "<group>"; };
+		43A455251D73E5A800CF21FD /* AFImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFImageDownloader.m; sourceTree = "<group>"; };
+		43A455261D73E5A800CF21FD /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		43A455271D73E5A800CF21FD /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		43A455281D73E5A800CF21FD /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
+		43A455291D73E5A800CF21FD /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
+		43A4552A1D73E5A800CF21FD /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+AFNetworking.h"; sourceTree = "<group>"; };
+		43A4552B1D73E5A800CF21FD /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+AFNetworking.m"; sourceTree = "<group>"; };
+		43A4552C1D73E5A800CF21FD /* UIImage+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+AFNetworking.h"; sourceTree = "<group>"; };
+		43A4552D1D73E5A800CF21FD /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		43A4552E1D73E5A800CF21FD /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		43A4552F1D73E5A800CF21FD /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIKit+AFNetworking.h"; sourceTree = "<group>"; };
+		43A455301D73E5A800CF21FD /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
+		43A455311D73E5A800CF21FD /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
+		43A455321D73E5A800CF21FD /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
+		43A455331D73E5A800CF21FD /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
+		43A455341D73E5A800CF21FD /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
+		43A455351D73E5A800CF21FD /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		43A455471D73E61100CF21FD /* DataMD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataMD5.h; sourceTree = "<group>"; };
+		43A455481D73E61100CF21FD /* DataMD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataMD5.m; sourceTree = "<group>"; };
+		43A455491D73E61100CF21FD /* XMLDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLDictionary.h; sourceTree = "<group>"; };
+		43A4554A1D73E61100CF21FD /* XMLDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLDictionary.m; sourceTree = "<group>"; };
+		43A4554D1D73F0D600CF21FD /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		43A455521D74068D00CF21FD /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		43A455531D74068D00CF21FD /* read_me.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = read_me.txt; sourceTree = "<group>"; };
+		43A455541D74068D00CF21FD /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		43A455551D74068D00CF21FD /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
+		43A455561D74068D00CF21FD /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		43A455571D74068D00CF21FD /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		43A454C91D73DEC900CF21FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43A4555B1D74071F00CF21FD /* CoreTelephony.framework in Frameworks */,
+				43A4550F1D73E14300CF21FD /* libc++.tbd in Frameworks */,
+				43A455581D74068D00CF21FD /* libWeChatSDK.a in Frameworks */,
+				43A4550D1D73E13600CF21FD /* libsqlite3.tbd in Frameworks */,
+				43A4550B1D73E11D00CF21FD /* libz.tbd in Frameworks */,
+				43A455091D73E11600CF21FD /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43A454E21D73DECB00CF21FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43A454ED1D73DECB00CF21FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		43A454C31D73DEC800CF21FD = {
+			isa = PBXGroup;
+			children = (
+				43A4554D1D73F0D600CF21FD /* CoreTelephony.framework */,
+				43A4550E1D73E14300CF21FD /* libc++.tbd */,
+				43A4550C1D73E13600CF21FD /* libsqlite3.tbd */,
+				43A4550A1D73E11D00CF21FD /* libz.tbd */,
+				43A455081D73E11600CF21FD /* SystemConfiguration.framework */,
+				43A454CE1D73DECA00CF21FD /* JKRWechatPayDemo */,
+				43A454E81D73DECB00CF21FD /* JKRWechatPayDemoTests */,
+				43A454F31D73DECB00CF21FD /* JKRWechatPayDemoUITests */,
+				43A454CD1D73DEC900CF21FD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		43A454CD1D73DEC900CF21FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				43A454CC1D73DEC900CF21FD /* JKRWechatPayDemo.app */,
+				43A454E51D73DECB00CF21FD /* JKRWechatPayDemoTests.xctest */,
+				43A454F01D73DECB00CF21FD /* JKRWechatPayDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		43A454CE1D73DECA00CF21FD /* JKRWechatPayDemo */ = {
+			isa = PBXGroup;
+			children = (
+				43A454D21D73DECA00CF21FD /* AppDelegate.h */,
+				43A454D31D73DECA00CF21FD /* AppDelegate.m */,
+				43A455071D73E06200CF21FD /* PrefixHeader.pch */,
+				43A454D51D73DECA00CF21FD /* ViewController.h */,
+				43A454D61D73DECA00CF21FD /* ViewController.m */,
+				43A455471D73E61100CF21FD /* DataMD5.h */,
+				43A455481D73E61100CF21FD /* DataMD5.m */,
+				43A455491D73E61100CF21FD /* XMLDictionary.h */,
+				43A4554A1D73E61100CF21FD /* XMLDictionary.m */,
+				43A454D81D73DECA00CF21FD /* Main.storyboard */,
+				43A454DB1D73DECA00CF21FD /* Assets.xcassets */,
+				43A454DD1D73DECA00CF21FD /* LaunchScreen.storyboard */,
+				43A454E01D73DECA00CF21FD /* Info.plist */,
+				43A455511D74068D00CF21FD /* SDKExport */,
+				43A455101D73E5A800CF21FD /* AFNetworking */,
+				43A454CF1D73DECA00CF21FD /* Supporting Files */,
+			);
+			path = JKRWechatPayDemo;
+			sourceTree = "<group>";
+		};
+		43A454CF1D73DECA00CF21FD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				43A454D01D73DECA00CF21FD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		43A454E81D73DECB00CF21FD /* JKRWechatPayDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				43A454E91D73DECB00CF21FD /* JKRWechatPayDemoTests.m */,
+				43A454EB1D73DECB00CF21FD /* Info.plist */,
+			);
+			path = JKRWechatPayDemoTests;
+			sourceTree = "<group>";
+		};
+		43A454F31D73DECB00CF21FD /* JKRWechatPayDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				43A454F41D73DECB00CF21FD /* JKRWechatPayDemoUITests.m */,
+				43A454F61D73DECB00CF21FD /* Info.plist */,
+			);
+			path = JKRWechatPayDemoUITests;
+			sourceTree = "<group>";
+		};
+		43A455101D73E5A800CF21FD /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				43A455111D73E5A800CF21FD /* AFNetworking */,
+				43A4551F1D73E5A800CF21FD /* LICENSE */,
+				43A455201D73E5A800CF21FD /* README.md */,
+				43A455211D73E5A800CF21FD /* UIKit+AFNetworking */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		43A455111D73E5A800CF21FD /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				43A455121D73E5A800CF21FD /* AFHTTPSessionManager.h */,
+				43A455131D73E5A800CF21FD /* AFHTTPSessionManager.m */,
+				43A455141D73E5A800CF21FD /* AFNetworking.h */,
+				43A455151D73E5A800CF21FD /* AFNetworkReachabilityManager.h */,
+				43A455161D73E5A800CF21FD /* AFNetworkReachabilityManager.m */,
+				43A455171D73E5A800CF21FD /* AFSecurityPolicy.h */,
+				43A455181D73E5A800CF21FD /* AFSecurityPolicy.m */,
+				43A455191D73E5A800CF21FD /* AFURLRequestSerialization.h */,
+				43A4551A1D73E5A800CF21FD /* AFURLRequestSerialization.m */,
+				43A4551B1D73E5A800CF21FD /* AFURLResponseSerialization.h */,
+				43A4551C1D73E5A800CF21FD /* AFURLResponseSerialization.m */,
+				43A4551D1D73E5A800CF21FD /* AFURLSessionManager.h */,
+				43A4551E1D73E5A800CF21FD /* AFURLSessionManager.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		43A455211D73E5A800CF21FD /* UIKit+AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				43A455221D73E5A800CF21FD /* AFAutoPurgingImageCache.h */,
+				43A455231D73E5A800CF21FD /* AFAutoPurgingImageCache.m */,
+				43A455241D73E5A800CF21FD /* AFImageDownloader.h */,
+				43A455251D73E5A800CF21FD /* AFImageDownloader.m */,
+				43A455261D73E5A800CF21FD /* AFNetworkActivityIndicatorManager.h */,
+				43A455271D73E5A800CF21FD /* AFNetworkActivityIndicatorManager.m */,
+				43A455281D73E5A800CF21FD /* UIActivityIndicatorView+AFNetworking.h */,
+				43A455291D73E5A800CF21FD /* UIActivityIndicatorView+AFNetworking.m */,
+				43A4552A1D73E5A800CF21FD /* UIButton+AFNetworking.h */,
+				43A4552B1D73E5A800CF21FD /* UIButton+AFNetworking.m */,
+				43A4552C1D73E5A800CF21FD /* UIImage+AFNetworking.h */,
+				43A4552D1D73E5A800CF21FD /* UIImageView+AFNetworking.h */,
+				43A4552E1D73E5A800CF21FD /* UIImageView+AFNetworking.m */,
+				43A4552F1D73E5A800CF21FD /* UIKit+AFNetworking.h */,
+				43A455301D73E5A800CF21FD /* UIProgressView+AFNetworking.h */,
+				43A455311D73E5A800CF21FD /* UIProgressView+AFNetworking.m */,
+				43A455321D73E5A800CF21FD /* UIRefreshControl+AFNetworking.h */,
+				43A455331D73E5A800CF21FD /* UIRefreshControl+AFNetworking.m */,
+				43A455341D73E5A800CF21FD /* UIWebView+AFNetworking.h */,
+				43A455351D73E5A800CF21FD /* UIWebView+AFNetworking.m */,
+			);
+			path = "UIKit+AFNetworking";
+			sourceTree = "<group>";
+		};
+		43A455511D74068D00CF21FD /* SDKExport */ = {
+			isa = PBXGroup;
+			children = (
+				43A455521D74068D00CF21FD /* libWeChatSDK.a */,
+				43A455531D74068D00CF21FD /* read_me.txt */,
+				43A455541D74068D00CF21FD /* README.txt */,
+				43A455551D74068D00CF21FD /* WechatAuthSDK.h */,
+				43A455561D74068D00CF21FD /* WXApi.h */,
+				43A455571D74068D00CF21FD /* WXApiObject.h */,
+			);
+			path = SDKExport;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		43A454CB1D73DEC900CF21FD /* JKRWechatPayDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43A454F91D73DECB00CF21FD /* Build configuration list for PBXNativeTarget "JKRWechatPayDemo" */;
+			buildPhases = (
+				43A454C81D73DEC900CF21FD /* Sources */,
+				43A454C91D73DEC900CF21FD /* Frameworks */,
+				43A454CA1D73DEC900CF21FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JKRWechatPayDemo;
+			productName = JKRWechatPayDemo;
+			productReference = 43A454CC1D73DEC900CF21FD /* JKRWechatPayDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		43A454E41D73DECB00CF21FD /* JKRWechatPayDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43A454FC1D73DECB00CF21FD /* Build configuration list for PBXNativeTarget "JKRWechatPayDemoTests" */;
+			buildPhases = (
+				43A454E11D73DECB00CF21FD /* Sources */,
+				43A454E21D73DECB00CF21FD /* Frameworks */,
+				43A454E31D73DECB00CF21FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43A454E71D73DECB00CF21FD /* PBXTargetDependency */,
+			);
+			name = JKRWechatPayDemoTests;
+			productName = JKRWechatPayDemoTests;
+			productReference = 43A454E51D73DECB00CF21FD /* JKRWechatPayDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		43A454EF1D73DECB00CF21FD /* JKRWechatPayDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43A454FF1D73DECB00CF21FD /* Build configuration list for PBXNativeTarget "JKRWechatPayDemoUITests" */;
+			buildPhases = (
+				43A454EC1D73DECB00CF21FD /* Sources */,
+				43A454ED1D73DECB00CF21FD /* Frameworks */,
+				43A454EE1D73DECB00CF21FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43A454F21D73DECB00CF21FD /* PBXTargetDependency */,
+			);
+			name = JKRWechatPayDemoUITests;
+			productName = JKRWechatPayDemoUITests;
+			productReference = 43A454F01D73DECB00CF21FD /* JKRWechatPayDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		43A454C41D73DEC800CF21FD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = tronsis_ios;
+				TargetAttributes = {
+					43A454CB1D73DEC900CF21FD = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					43A454E41D73DECB00CF21FD = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 43A454CB1D73DEC900CF21FD;
+					};
+					43A454EF1D73DECB00CF21FD = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 43A454CB1D73DEC900CF21FD;
+					};
+				};
+			};
+			buildConfigurationList = 43A454C71D73DEC800CF21FD /* Build configuration list for PBXProject "JKRWechatPayDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 43A454C31D73DEC800CF21FD;
+			productRefGroup = 43A454CD1D73DEC900CF21FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				43A454CB1D73DEC900CF21FD /* JKRWechatPayDemo */,
+				43A454E41D73DECB00CF21FD /* JKRWechatPayDemoTests */,
+				43A454EF1D73DECB00CF21FD /* JKRWechatPayDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		43A454CA1D73DEC900CF21FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43A454DF1D73DECA00CF21FD /* LaunchScreen.storyboard in Resources */,
+				43A454DC1D73DECA00CF21FD /* Assets.xcassets in Resources */,
+				43A4553C1D73E5A800CF21FD /* LICENSE in Resources */,
+				43A454DA1D73DECA00CF21FD /* Main.storyboard in Resources */,
+				43A4555A1D74068D00CF21FD /* README.txt in Resources */,
+				43A455591D74068D00CF21FD /* read_me.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43A454E31D73DECB00CF21FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43A454EE1D73DECB00CF21FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		43A454C81D73DEC900CF21FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43A4553B1D73E5A800CF21FD /* AFURLSessionManager.m in Sources */,
+				43A454D71D73DECA00CF21FD /* ViewController.m in Sources */,
+				43A4553D1D73E5A800CF21FD /* README.md in Sources */,
+				43A454D41D73DECA00CF21FD /* AppDelegate.m in Sources */,
+				43A4554B1D73E61100CF21FD /* DataMD5.m in Sources */,
+				43A455371D73E5A800CF21FD /* AFNetworkReachabilityManager.m in Sources */,
+				43A454D11D73DECA00CF21FD /* main.m in Sources */,
+				43A455411D73E5A800CF21FD /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				43A455381D73E5A800CF21FD /* AFSecurityPolicy.m in Sources */,
+				43A455441D73E5A800CF21FD /* UIProgressView+AFNetworking.m in Sources */,
+				43A455391D73E5A800CF21FD /* AFURLRequestSerialization.m in Sources */,
+				43A4553A1D73E5A800CF21FD /* AFURLResponseSerialization.m in Sources */,
+				43A455401D73E5A800CF21FD /* AFNetworkActivityIndicatorManager.m in Sources */,
+				43A455431D73E5A800CF21FD /* UIImageView+AFNetworking.m in Sources */,
+				43A455421D73E5A800CF21FD /* UIButton+AFNetworking.m in Sources */,
+				43A455451D73E5A800CF21FD /* UIRefreshControl+AFNetworking.m in Sources */,
+				43A455461D73E5A800CF21FD /* UIWebView+AFNetworking.m in Sources */,
+				43A4554C1D73E61100CF21FD /* XMLDictionary.m in Sources */,
+				43A455361D73E5A800CF21FD /* AFHTTPSessionManager.m in Sources */,
+				43A4553E1D73E5A800CF21FD /* AFAutoPurgingImageCache.m in Sources */,
+				43A4553F1D73E5A800CF21FD /* AFImageDownloader.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43A454E11D73DECB00CF21FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43A454EA1D73DECB00CF21FD /* JKRWechatPayDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43A454EC1D73DECB00CF21FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43A454F51D73DECB00CF21FD /* JKRWechatPayDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		43A454E71D73DECB00CF21FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43A454CB1D73DEC900CF21FD /* JKRWechatPayDemo */;
+			targetProxy = 43A454E61D73DECB00CF21FD /* PBXContainerItemProxy */;
+		};
+		43A454F21D73DECB00CF21FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43A454CB1D73DEC900CF21FD /* JKRWechatPayDemo */;
+			targetProxy = 43A454F11D73DECB00CF21FD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		43A454D81D73DECA00CF21FD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43A454D91D73DECA00CF21FD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		43A454DD1D73DECA00CF21FD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43A454DE1D73DECA00CF21FD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		43A454F71D73DECB00CF21FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		43A454F81D73DECB00CF21FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		43A454FA1D73DECB00CF21FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = JKRWechatPayDemo/PrefixHeader.pch;
+				INFOPLIST_FILE = JKRWechatPayDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JKRWechatPayDemo/SDKExport",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tronsis.deplay1002;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		43A454FB1D73DECB00CF21FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = JKRWechatPayDemo/PrefixHeader.pch;
+				INFOPLIST_FILE = JKRWechatPayDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JKRWechatPayDemo/SDKExport",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tronsis.deplay1002;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		43A454FD1D73DECB00CF21FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = JKRWechatPayDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = joker.JKRWechatPayDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JKRWechatPayDemo.app/JKRWechatPayDemo";
+			};
+			name = Debug;
+		};
+		43A454FE1D73DECB00CF21FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = JKRWechatPayDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = joker.JKRWechatPayDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JKRWechatPayDemo.app/JKRWechatPayDemo";
+			};
+			name = Release;
+		};
+		43A455001D73DECB00CF21FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = JKRWechatPayDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = joker.JKRWechatPayDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = JKRWechatPayDemo;
+			};
+			name = Debug;
+		};
+		43A455011D73DECB00CF21FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = JKRWechatPayDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = joker.JKRWechatPayDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = JKRWechatPayDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		43A454C71D73DEC800CF21FD /* Build configuration list for PBXProject "JKRWechatPayDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43A454F71D73DECB00CF21FD /* Debug */,
+				43A454F81D73DECB00CF21FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43A454F91D73DECB00CF21FD /* Build configuration list for PBXNativeTarget "JKRWechatPayDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43A454FA1D73DECB00CF21FD /* Debug */,
+				43A454FB1D73DECB00CF21FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		43A454FC1D73DECB00CF21FD /* Build configuration list for PBXNativeTarget "JKRWechatPayDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43A454FD1D73DECB00CF21FD /* Debug */,
+				43A454FE1D73DECB00CF21FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		43A454FF1D73DECB00CF21FD /* Build configuration list for PBXNativeTarget "JKRWechatPayDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43A455001D73DECB00CF21FD /* Debug */,
+				43A455011D73DECB00CF21FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 43A454C41D73DEC800CF21FD /* Project object */;
+}
